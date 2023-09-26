@@ -5,3 +5,16 @@ main {
   height: 700px;
   width: margin auto;
 }
+
+h1 {
+  font-size: 50px;
+  color: white;
+  padding-top: 100px;
+}
+
+h2 {
+  font-size: 30px;
+  color: white;
+  padding-top: 50px;
+}
+

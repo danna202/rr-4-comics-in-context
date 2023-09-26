@@ -1,48 +1,24 @@
-// import React, { useContext } from "react";
-// import RequestFormButton from './RequestFormButton'
+import React, { useContext } from "react";
+import StylesContext from "./StylesContext"
 
-// export default function SubmitForm() {
-//   return (
-//     <div style={{display: "flex"}}>
-//       <form style={{display: "inline-block"}}>
-//         <label>
-//           Name of Comic:
-//           <input type="text" />
-//         </label>
-//         <label>
-//           Year of Release:
-//           <input type="text" />
-//         </label>
-//         <label>
-//           Your Email:
-//           <input type="text" />
-//         </label>
+export default function CollectorButton() {
+  const buttonStyling = useContext(StylesContext);
 
-//         <RequestFormButton />
-      
-//       </form> 
-//     </div>
-//   );
-// }
-import React from "react";
-
-export default function SubmitForm() {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission logic
-    console.log("Form submitted!");
+  const buttonStyleWithHover = {
+    ...buttonStyling,
+    textAlign: "center", // Center align the text
+    transition: "background-color 0.3s ease",
+    ":hover": {
+      backgroundColor: "blue", // Change to the desired hover color
+      color: "white", // Change to the desired hover text color
+    },
   };
 
   return (
-    <div style={{ marginTop: "60px", textAlign: "center" }}>
-      <form onSubmit={handleSubmit}>
-        <label>
-          Special Request:
-          <textarea rows="60" cols="100" />
-        </label>
-        <br />
-        <button type="submit">Submit</button>
-      </form>
+    <div style={{ marginTop: "50px", textAlign: "center" }}>
+      <button style={buttonStyleWithHover}>
+        Click Here!
+      </button>
     </div>
   );
 }

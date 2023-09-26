@@ -4,6 +4,7 @@ import StylesContext from "./StylesContext"
 export default function CollectorButton() {
   const buttonStyling = useContext(StylesContext);
 
+  // change button color on hover
   const buttonStyleWithHover = {
     ...buttonStyling,
     textAlign: "center", // Center align the text
@@ -14,21 +15,12 @@ export default function CollectorButton() {
     },
   };
 
-  return (
-    <div style={{ marginTop: "20px", textAlign: "center" }}>
+  return (  
+    <div style={{ display: "flex", justifyContent: "center", marginTop: "20px" }}>
       <button style={buttonStyleWithHover}>
         Click Here!
       </button>
     </div>
   );
+
 }
-
-
-//   return (
-//     <div>
-//       <button style={buttonStyling}>
-//         Click Here!
-//       </button>
-//     </div>
-//   );
-// }

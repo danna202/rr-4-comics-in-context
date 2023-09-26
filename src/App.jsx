@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-
 import UserInterface from "./UserInterface"
 import StylesContext from "./StylesContext";
 
@@ -19,8 +18,7 @@ function App() {
 
 
   return (
-    <main>
-      
+    <main>      
       <StylesContext.Provider value={stylin}>
         <h1
           style={{
