@@ -2,13 +2,13 @@ import React, { useContext } from "react";
 import StylesContext from "./StylesContext"
 
 const styles = {  
-  background: "blue",
+  background: "#ECD97",
   display: "inline-block",
   width: 120,
   height: 55,
   fontSize: 18,
   letterSpacing: 1,
-  border: "2px solid black",
+  border: "2px solid #ECD97",
   borderRadius: 15
 };
 
